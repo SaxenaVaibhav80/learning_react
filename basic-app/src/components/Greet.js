@@ -10,8 +10,7 @@ import React from 'react'
 
 
 // jsx syntax can be converted into the js syntax using babel
-  const greet = () =>{
-
+   const Greet = () =>{
      return React.createElement(
     'div',
     null,
@@ -19,4 +18,31 @@ import React from 'react'
    )
 }
 
-export default greet
+
+// PROPS--->
+// 1-Props are arguments passed into React components.
+// 2-Props are passed to components via HTML attributes.
+
+
+// const greet =(props)=>
+// {  console.log(props.name)
+//     return <h1>hello mr. vaibhav god morning</h1>  // this is jsx syntax and that jsx will converted into js using babel 
+// }
+
+
+// using multiple component as a single component and exporting it --->
+
+function Alert()
+{
+
+   return(
+      <div>
+         <Greet/>
+         <h1>READ CAREFULLYYYY</h1>
+      </div>
+   )
+}
+
+
+
+export default Alert
