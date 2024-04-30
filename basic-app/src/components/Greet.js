@@ -32,13 +32,12 @@ import React from 'react'
 
 // using multiple component as a single component and exporting it --->
 
-function Alert()
+function Alert(props)
 {
-
    return(
       <div>
          <Greet/>
-         <h1>READ CAREFULLYYYY</h1>
+         <h1>READ CAREFULLYYYY {props.name}</h1>
       </div>
    )
 }
