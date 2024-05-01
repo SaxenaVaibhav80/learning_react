@@ -10,7 +10,7 @@ function App() {
     <div className="App">
      <Heading></Heading>
      <Greet name='VAIBHAV'></Greet>
-     <Paragraph></Paragraph>
+     <Paragraph name="webdev"><p>We are writing paragraph of my self below</p></Paragraph>
      <Footer></Footer>
     </div>
   );
