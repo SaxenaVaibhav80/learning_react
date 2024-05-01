@@ -1,4 +1,6 @@
-import { useState } from "react"
+// import { useState } from "react"  // state for functional component 
+import React ,{Component} from 'react' // state for class component 
+
 // Yes, that's generally correct. Let's delve into the differences between props and state in React to understand why props are considered static while state is considered dynamic.
 
 // Props---->
@@ -25,27 +27,93 @@ import { useState } from "react"
 // Usage: State is used when a component needs to manage data that changes over time, such as form inputs, toggle states, or asynchronous data from APIs.
 
 
-function Message(){
 
-  const [para,setPara] = useState("Visit my site")
+// Now i want to do that clicking on click button i want to change 'visite my site' to ' thanks for visiting'
+// method 1 using functional component-->
+// method 2 using class component-->
 
-function handleClick(){
 
-  setPara('Thanks for visiting')
+
+// USING METHOD 1---->
+
+// function Message()
+// {
+//   const [head,setHead] = useState("Visit my site")
+//   function handleClick()
+//   {
+//     setHead('Thanks for visiting')
+//   }
+
+//   return(
+//     <>
+//       <h1>{head}</h1>
+//       <button onClick={()=>handleClick()}>click</button>
+//     </>
+//   )
+
+// }
+
+
+// USING METHOD 2-->
+
+class Welcome extends Component{
+
+  constructor()
+  {
+    super()
+    this.state={
+       message:'visite my website'
+    }
+  }
+
+  handleClick()
+  {
+    this.setState({
+      message:'thanks for visiting'
+    })
+  }
+  render()
+ {
+  return (
+  <>
+     <h1>{this.state.message}</h1>
+     <button onClick={()=>this.handleClick()}>click</button>
+  </>
+
+  )
+
+ }
+}
+
+
+// ABOUT CLASS BASED COMPONENT IN REACT ----->
+   
+  //  constructor: This is a special method used in class-based components to initialize state and bind event handlers. It's called when a new   instance of the class is created.
+
+
+
+// WHY REQUIRE SUPER METHOD ?------>
+
+/*
+ When using class-based inheritance in JavaScript, including React class components, it's essential to call super() in the child class's         constructor to initialize the parent class. This ensures that the child class inherits the parent class's properties and methods and behaves correctly according to JavaScript's object-oriented principles.
+*/
+
+/* Note->  When a child class has a constructor, it must call the parent class's constructor using super() to maintain the inheritance chain.
+           This process is known as "constructor chaining." */
+
+//   Initialization of Parent Class:--> 
+//       The parent class might have its initialization logic, state setup, or other configurations that need to 
+//       run before the child class's constructor. By calling super(), you ensure the parent class's constructor is executed, allowing it to set 
+//       up any required context
+
+//    Access to 'this':--> 
+//       In JavaScript class-based inheritance,the this keyword in the child class's constructor is not available until super() 
+//       has been called.This limitation ensures that the parent class is properly initialized before the child class attempts to reference itself.
   
-}
-
-return(
-    <>
-      <h1>{para}</h1>
-      <button onClick={()=>handleClick()}>click</button>
-    </>
-)
+//     Inheriting Properties and Methods:-->  
+//        "Even if the child class doesn't explicitly use the parent class's properties or methods",
+//         calling super() ensures that the child class inherits these features and behaves as expected in the class hierarchy.
 
 
-}
 
-
-// no i want to do that clicking on click button i want to change 'visite my site' to ' thanks for visiting'
-
-export default Message 
+export default Welcome

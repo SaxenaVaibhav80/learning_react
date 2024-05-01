@@ -6,8 +6,6 @@ import Paragraph from './components/Paragraph';
 import Footer from './components/Footer';
 import Message from './components/Message';
 
-
-
 function App() {
   return (
     <div className="App">
