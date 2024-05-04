@@ -5,6 +5,8 @@ import Heading from './components/Heading';
 import Paragraph from './components/Paragraph';
 import Footer from './components/Footer';
 import Message from './components/Message';
+import Counter from './components/Counter';
+import CounterFive from './components/CounterFive';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
      <Paragraph name="webdev"><p>We are writing paragraph of my self below</p></Paragraph>
      <Footer></Footer>
      <Message></Message>
+     <Counter></Counter>
+     <CounterFive></CounterFive>
     </div>
   );
 }
