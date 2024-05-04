@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Message from './components/Message';
 import Counter from './components/Counter';
 import CounterFive from './components/CounterFive';
+import FunctionalCounter from './components/FunctionalCounter';
 
 function App() {
   return (
@@ -16,7 +17,11 @@ function App() {
      <Paragraph name="webdev"><p>We are writing paragraph of my self below</p></Paragraph>
      <Footer></Footer>
      <Message></Message>
-     <Counter></Counter>
+     <h1>This is normal counter using class component</h1>
+     <Counter ></Counter>
+     <h1>This is  counter using 'useState" in functional component</h1>
+     <FunctionalCounter ></FunctionalCounter>
+     <h1>This is counter , counting in multiple of 5 using prev state, using class component</h1>
      <CounterFive></CounterFive>
     </div>
   );
