@@ -8,6 +8,7 @@ import Message from './components/Message';
 import Counter from './components/Counter';
 import CounterFive from './components/CounterFive';
 import FunctionalCounter from './components/FunctionalCounter';
+import UseEffect from './components/UseEffect';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
      <FunctionalCounter ></FunctionalCounter>
      <h1>This is counter , counting in multiple of 5 using prev state, using class component</h1>
      <CounterFive></CounterFive>
+     <UseEffect></UseEffect>
     </div>
   );
 }
