@@ -22,7 +22,7 @@ function  UseEffect ()
 
       useEffect(()=>          // will work only when component load first time  and when count will set or update 
       {
-         alert('effect work')
+         console.log('effect work')
       },[count])
 
     return (

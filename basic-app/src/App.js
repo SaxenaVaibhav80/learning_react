@@ -11,6 +11,7 @@ import FunctionalCounter from './components/FunctionalCounter';
 import UseEffect from './components/UseEffect';
 import Child from './components/Child'
 import OtherChild from './components/OtherChild';
+import UseRef from './components/UseRef';
 import { createContext } from 'react';
 
 
@@ -25,10 +26,11 @@ import { createContext } from 'react';
 
 
 export const GlobalInfo = createContext()
+
 const color="red"
 const GetDay= (day)=>
   {
-    console.log(day)
+    console.log("day is ",day)
   }
 function App() {
   return (
@@ -50,6 +52,10 @@ function App() {
       <Child></Child>
       <OtherChild></OtherChild>
     </GlobalInfo.Provider>
+    <UseRef></UseRef>
+
+    {/* NOTE--->
+         Yes, the Provider component, returned by createContext(), has an internal implementation that defines its behavior within React's Context API. The source code for React and its Provider component is part of the React library's internals, and while users generally don't need to delve into the source code, understanding its role and high-level behavior can be helpful. */}
    
     </div>
   );
