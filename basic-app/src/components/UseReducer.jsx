@@ -28,6 +28,11 @@ function UseReducer()
     )
 }
 
+/*ABOUT useReducer---->
+
+useReducer is a react hook used for state management
+it is a alternative of useState() hook
+preferable for complex state management logic or to hadle multiple states */ 
 
 // NOTE-->
 // dispatch is a function returned by useReducer. It allows you to send (or "dispatch") an action to the reducer function.
