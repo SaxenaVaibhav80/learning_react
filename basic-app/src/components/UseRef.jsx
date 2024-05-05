@@ -28,6 +28,13 @@ function UseRef()
                 setNum(e.target.value)
             }
            }/>
+
+           {/* Note=>        
+              When you create a ref and pass it to a any component, the ref holds a reference to the instance of that component, allowing you to interact with it directly through the ref.current property. 
+              
+               When you use a ref attribute like ref={inputone}, it passes the reference of that component (or DOM element) to the current property of the inputone ref
+          */}
+
            <input value={num} type="text"  ref={inputtwo} onChange={(e)=>
             {
                 setNum(e.target.value)
