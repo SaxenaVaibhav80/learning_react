@@ -1,0 +1,1 @@
+// NOTE---> useMemo  and useCallback are similar . the main difference is that useMemo returs a memoized value and useCallback returns a memoized function 
