@@ -6,7 +6,7 @@ function UseRef()
     const [num,setNum]=useState(0)
     const inputone = useRef()
     const inputtwo=useRef()
-    console.log(inputone)
+
    
     const printHello=()=>
         {

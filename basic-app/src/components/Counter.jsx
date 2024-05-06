@@ -12,6 +12,8 @@ class Counter extends Component{
     }
  }
 
+
+
  increment(){
 
     this.setState({

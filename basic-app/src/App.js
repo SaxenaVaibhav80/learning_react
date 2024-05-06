@@ -13,6 +13,8 @@ import Child from './components/Child'
 import OtherChild from './components/OtherChild';
 import UseRef from './components/UseRef';
 import UseReducer from './components/UseReducer';
+import Memo from './components/Memo';
+import UseCallback from './components/UseCallback';
 import { createContext } from 'react';
 
 
@@ -55,6 +57,11 @@ function App() {
     </GlobalInfo.Provider>
     <UseRef></UseRef>
     <UseReducer></UseReducer>
+    <h1>MEMO CONCEPT </h1>
+    <Memo></Memo>
+    <h1>CALL BACK CONCEPT (BELOW)</h1>
+    <UseCallback></UseCallback>
+    
 
     {/* NOTE--->
          Yes, the Provider component, returned by createContext(), has an internal implementation that defines its behavior within React's Context API. The source code for React and its Provider component is part of the React library's internals, and while users generally don't need to delve into the source code, understanding its role and high-level behavior can be helpful. */}
