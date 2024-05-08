@@ -55,6 +55,7 @@ function App() {
       <Child></Child>
       <OtherChild></OtherChild>
     </GlobalInfo.Provider>
+    <h1>Use ref</h1>
     <UseRef></UseRef>
     <UseReducer></UseReducer>
     <h1>MEMO CONCEPT </h1>

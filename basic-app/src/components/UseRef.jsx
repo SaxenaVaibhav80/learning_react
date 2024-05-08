@@ -37,6 +37,7 @@ function UseRef()
 
            <input value={num} type="text"  ref={inputtwo} onChange={(e)=>
             {
+                console.log(e.target.value)
                 setNum(e.target.value)
             }
            }/>
